@@ -1,3 +1,4 @@
+import html
 import os
 import sys
 
@@ -81,7 +82,8 @@ class Bot:
         n = len(interesting_tweets)
         for i, tweet in enumerate(interesting_tweets):
             print("Tooting", "%d/%d" % (i+1, n))
-            self.mastodon_client.toot(tweet["text"])
+            unescaped_text = html.unescape(tweet["text"])
+            self.mastodon_client.toot(unescaped_text)
 
         self.config["last_tweet_id"] = tweets[0]['id']
         write_config(self.config)
