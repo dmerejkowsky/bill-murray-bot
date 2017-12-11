@@ -33,6 +33,7 @@ class TwitterClient:
                 screen_name="BiIIMurray", since_id=since_id):
             yield json_data
 
+
 class MastodonClient:
     def __init__(self, config):
         mastodon_conf = config["mastodon"]
@@ -89,6 +90,7 @@ class Bot:
 def main():
     bot = Bot()
     bot.execute()
+
 
 if __name__ == "__main__":
     main()
