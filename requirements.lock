@@ -1,0 +1,20 @@
+# Generated with dmenv 0.6.0, python 3.6.7, on Linux
+asn1crypto==0.24.0
+certifi==2018.10.15
+cffi==1.11.6
+chardet==3.0.4
+cryptography==2.4.1
+decorator==4.3.0
+http-ece==1.0.5
+idna==2.7
+importlib-metadata==0.6
+Mastodon.py==1.3.1
+path.py==11.5.0
+pycparser==2.19
+python-dateutil==2.7.5
+pytz==2018.7
+requests==2.20.1
+ruamel.yaml==0.15.77
+six==1.11.0
+twitter==1.18.0
+urllib3==1.24.1
